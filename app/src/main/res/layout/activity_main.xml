@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<include layout="@layout/top_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/topToolbar"
+
+    />
+
+    <ImageView
+        android:id="@+id/ivElevation"
+        android:layout_below="@+id/topToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sqaure"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher"/>
+
+
+    <include layout="@layout/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomToolbar"
+
+        />
+
+</RelativeLayout>
